@@ -15,6 +15,7 @@ export default () => {
       <header className = "task__header"></header>
       <main className = "task__main">
         <section onClick = {switchTodo} className = {todoSwitcher ? "task__wrapper task__wrapper_backgroundColor_white" : "task__wrapper"}>
+          <div className = {todoSwitcher ? "task__triangle" : "task__triangle task__triangle_display_none"}></div>
           <span className = {todoSwitcher ? "task__text task__text_display_none" : "task__text"}>Write a new task</span>
           <div className = {todoSwitcher ? "task__box" : "task__box task__box_display_none"}></div>
           <div contentEditable = "true" placeholder = "Write a task here" onInput = {() => inputHandler("task__input")} 
