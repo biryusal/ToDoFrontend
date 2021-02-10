@@ -90,5 +90,14 @@
         display: none;
       }
     }
+    &_color {
+      &_golden {
+        color: #A3834B;
+      }
+    }
   }
+}
+
+div.task__input:empty:before {
+  content: "Write a new task here";
 }
