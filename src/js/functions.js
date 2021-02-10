@@ -1,9 +1,14 @@
 export function inputHandler(id) {
   let input = document.getElementById(id);
 
-  if (input.innerHTML.includes("//")) {
-    input.innerHTML = input.innerHTML.slice(0, input.innerHTML.indexOf("//")) + `<span class = "task__input_color_golden">${input.innerHTML.slice(input.innerHTML.indexOf("//"))}</span>`;
+  if (input.innerText.includes("//")) {
+    input.innerHTML = input.innerText.slice(0, input.innerText.indexOf("//")) + `<span id = "task__input_golden" class = "task__input_color_golden">
+    ${input.innerText.slice(input.innerText.indexOf("//"))}</span>`;
     placeCaretAtEnd(input);
+  }
+
+  else {
+    document.querySelector("#task__input_golden").classList.remove("task__input_color_golden");
   }
 }
 
