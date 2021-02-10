@@ -15,6 +15,7 @@ export default () => {
       <main className = "task__main">
         <section onClick = {switchTodo} className = {todoSwitcher ? "task__wrapper task__wrapper_backgroundColor_white" : "task__wrapper"}>
           <span className = "task__text">Write a new task</span>
+          <div className = {todoSwitcher ? "task__box" : "task__box task__box_display_none"}></div>
         </section>
       </main>
       <footer className = "task__footer"></footer>

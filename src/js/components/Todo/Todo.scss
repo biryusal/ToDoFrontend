@@ -54,6 +54,20 @@
     }
   }
 
+  &__box {
+    flex-shrink: 0;
+    width: 25px;
+    height: 25px;
+    background-color: #E9E9E9;
+    border-radius: 7px;
+    margin-left: 20px;
+    &_display {
+      &_none {
+        display: none;
+      }
+    }
+  }
+
   &__text {
     color: #5B5E66;
     padding: 0 20px;
