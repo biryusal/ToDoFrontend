@@ -19,7 +19,7 @@
 
   &__wrapper {
     width: 90%;
-    min-height: 60px;
+    min-height: 40px;
     border-radius: 20px;
     padding: 10px 0;
 
@@ -41,6 +41,12 @@
       }
     }
 
+    &_alignItems {
+      &_center {
+        align-items: center;
+      }
+    }
+
     transition: background-color .4s;
     &:hover {
       color: #4E5256;
@@ -57,6 +63,7 @@
 
   &__box {
     flex-shrink: 0;
+    margin-top: 5px;
     width: 25px;
     height: 25px;
     background-color: #E9E9E9;
@@ -107,6 +114,10 @@
     width: 35px;
     border-radius: 10px;
     background-color: #F2F4F5;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0ibTQ0NiA0MGgtNDZ2LTI0YzAtOC44MzYtNy4xNjMtMTYtMTYtMTZzLTE2IDcuMTY0LTE2IDE2djI0aC0yMjR2LTI0YzAtOC44MzYtNy4xNjMtMTYtMTYtMTZzLTE2IDcuMTY0LTE2IDE2djI0aC00NmMtMzYuMzkzIDAtNjYgMjkuNjA3LTY2IDY2djM0MGMwIDM2LjM5MyAyOS42MDcgNjYgNjYgNjZoMzgwYzM2LjM5MyAwIDY2LTI5LjYwNyA2Ni02NnYtMzQwYzAtMzYuMzkzLTI5LjYwNy02Ni02Ni02NnptLTM4MCAzMmg0NnYxNmMwIDguODM2IDcuMTYzIDE2IDE2IDE2czE2LTcuMTY0IDE2LTE2di0xNmgyMjR2MTZjMCA4LjgzNiA3LjE2MyAxNiAxNiAxNnMxNi03LjE2NCAxNi0xNnYtMTZoNDZjMTguNzQ4IDAgMzQgMTUuMjUyIDM0IDM0djM4aC00NDh2LTM4YzAtMTguNzQ4IDE1LjI1Mi0zNCAzNC0zNHptMzgwIDQwOGgtMzgwYy0xOC43NDggMC0zNC0xNS4yNTItMzQtMzR2LTI3MGg0NDh2MjcwYzAgMTguNzQ4LTE1LjI1MiAzNC0zNCAzNHoiIGZpbGw9IiM2MTY3NzAiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD48L2c+PC9nPjwvc3ZnPg==");
+    background-size: 22px 22px;
+    background-repeat: no-repeat;
+    background-position: 50%;
     &_display {
       &_none {
         display: none;
@@ -116,6 +127,7 @@
 
   &__listPicker {
     flex-shrink: 0;
+    height: 35px;
     background-color: #F3F5F7;
     border-radius: 10px;
     display: flex;
@@ -124,7 +136,6 @@
     padding: 0 10px;
     margin: 0 10px;
     min-width: 100px;
-    height: 60%;
     &_display {
       &_none {
         display: none;
