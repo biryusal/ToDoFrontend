@@ -1,0 +1,38 @@
+.task {
+  &__main {
+    width: 100vw;
+    height: 100vh;
+    background-color: #DEE0E4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__wrapper {
+    width: 90%;
+    min-height: 60px;
+    border-radius: 20px;
+    padding: 10px 0;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #CED2DA;
+
+    transition: background-color .4s;
+    &:hover {
+      color: #4E5256;
+      background-color: #C6CAD2;
+      transition: background-color .4s;
+    }
+
+    @media screen and (min-width: 1440px) {
+      max-width: 900px;
+      min-height: 70px;
+      font-size: 20px;
+    }
+  }
+}
