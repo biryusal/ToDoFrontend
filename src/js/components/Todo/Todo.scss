@@ -71,5 +71,24 @@
   &__text {
     color: #5B5E66;
     padding: 0 20px;
+    &_display {
+      &_none {
+        display: none;
+      }
+    }
+  }
+
+  &__input {
+    flex-grow: 1;
+    outline: none;
+    margin: 0 20px;
+    min-width: 50px;
+    height: 75%;
+    background-color: transparent;
+    &_display {
+      &_none {
+        display: none;
+      }
+    }
   }
 }
