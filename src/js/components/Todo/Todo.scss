@@ -31,6 +31,15 @@
 
     background-color: #CED2DA;
 
+    &_backgroundColor {
+      &_white {
+        background-color: white;
+        &:hover {
+          background-color: #fff !important;
+        }
+      }
+    }
+
     transition: background-color .4s;
     &:hover {
       color: #4E5256;
