@@ -1,7 +1,9 @@
 .task {
   &__main {
     width: 100vw;
+    min-width: 100%;
     height: 100vh;
+    min-height: 100%;
     background-color: #DEE0E4;
     display: flex;
     justify-content: center;
